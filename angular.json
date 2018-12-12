@@ -101,5 +101,26 @@
       }
     }
   },
-  "defaultProject": "vivos-aire"
+  "defaultProject": "vivos-aire",
+  "schematics": {
+    "@schematics/angular:component": {
+      "styleext": "scss",
+      "spec": false
+    },
+    "@schematics/angular:module": {
+      "spec": false
+    },
+    "@schematics/angular:service": {
+      "spec": true
+    },
+    "@schematics/angular:pipe": {
+      "spec": true
+    },
+    "@schematics/angular:directive": {
+      "spec": true
+    },
+    "@schematics/angular:class": {
+      "spec": true
+    }
+  }
 }
