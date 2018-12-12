@@ -9,6 +9,7 @@ import { OrderDetailsComponent } from './pages/order-details/order-details.compo
 import { OrderApplianceComponent } from './pages/order-appliance/order-appliance.component';
 import { RouterModule } from '@angular/router';
 import { SubmissionRoutingModule } from './submission-routing.module';
+import { TeethChartingComponent } from './pages/patient-occlusion/teeth-charting/teeth-charting.component';
 
 @NgModule({
   imports: [
@@ -16,6 +17,6 @@ import { SubmissionRoutingModule } from './submission-routing.module';
     SubmissionRoutingModule
   ],
   exports: [RouterModule],
-  declarations: [PatientInfoComponent, HealthHistoryComponent, PatientObjectivesComponent, PatientOcclusionComponent, MiscDocumentsComponent, OrderDetailsComponent, OrderApplianceComponent]
+  declarations: [PatientInfoComponent, HealthHistoryComponent, PatientObjectivesComponent, PatientOcclusionComponent, MiscDocumentsComponent, OrderDetailsComponent, OrderApplianceComponent, TeethChartingComponent]
 })
 export class SubmissionModule { }
