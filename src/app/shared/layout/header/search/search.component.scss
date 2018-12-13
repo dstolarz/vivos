@@ -1,0 +1,23 @@
+@import 'src/assets/scss/_colors.scss';
+
+.search-container {
+  .search-patient {
+    padding: 8px 12px;
+    font-size: 12px;
+    border-radius: 20px;
+    box-sizing: border-box;
+    border: 1px solid $paris-white;
+    height: 34px;
+    width: 200px;
+    color: $pewter;
+    &::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+      color: $pewter;
+    }
+    &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+      color: $pewter;
+    }
+    &::-ms-input-placeholder { /* Microsoft Edge */
+      color: $pewter;
+    }
+  }
+}

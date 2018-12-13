@@ -4,6 +4,8 @@ import { RouterModule } from '@angular/router';
 
 import { NavComponent } from './nav/nav.component';
 import { FooterComponent } from './footer/footer.component';
+import { HeaderModule } from './header/header.module';
+import { HeaderComponent } from './header/header.component';
 
 @NgModule({
     declarations: [
@@ -12,11 +14,13 @@ import { FooterComponent } from './footer/footer.component';
     ],
     imports: [
       CommonModule,
-      RouterModule
+      RouterModule,
+      HeaderModule,
     ],
     exports: [
         NavComponent,
-        FooterComponent
+        FooterComponent,
+        HeaderComponent
     ],
     providers: [],
 })

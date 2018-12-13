@@ -8,30 +8,24 @@ import { CONTENT_ROUTES } from '@app/shared';
 
 import { NoAuthGuard } from '@app/core';
 
-const routes: Routes = [
-  {
-    path: '',
-    redirectTo: '/submission/patient-info',
-    pathMatch: 'full'
-  },
-  {
-    path: '',
-    component: ContentLayoutComponent,
-    canActivate: [NoAuthGuard], // Should be replaced with actual auth guard
-    children: CONTENT_ROUTES
-  },
-  {
-    path: 'auth',
-    component: AuthLayoutComponent,
-    loadChildren: './modules/auth/auth.module#AuthModule'
-  },
-  // Fallback when no prior routes is matched
-  { path: '**', redirectTo: '/auth/login', pathMatch: 'full' }
-];
+const routes: Routes = [{
+  path: 'dashboard',
+  component: ContentLayoutComponent,
+  canActivate: [NoAuthGuard], // Should be replaced with actual auth guard
+  children: CONTENT_ROUTES
+}, {
+  path: 'auth',
+  component: AuthLayoutComponent,
+  loadChildren: './modules/auth/auth.module#AuthModule'
+}, {
+  path: '**',
+  redirectTo: '/dashboard/basic-info/',
+  pathMatch: 'full'
+}];
 
 @NgModule({
-    imports: [RouterModule.forRoot(routes, {useHash: true})],
-    exports: [RouterModule],
-    providers: []
+  imports: [RouterModule.forRoot(routes, { useHash: true })],
+  exports: [RouterModule],
+  providers: []
 })
 export class AppRoutingModule { }

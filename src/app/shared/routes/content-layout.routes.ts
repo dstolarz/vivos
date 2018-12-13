@@ -6,6 +6,10 @@ import { InsuranceInfoComponent } from '@app/layouts/insurance-info/insurance-in
 import { AppointmentsComponent } from '@app/layouts/appointments/appointments.component';
 
 export const CONTENT_ROUTES: Routes = [{
+  path: '',
+  redirectTo: '/dashboard/basic-info',
+  pathMatch: 'full'
+}, {
   path: 'basic-info',
   component: BasicInfoComponent
 }, {
