@@ -1,7 +1,4 @@
-# Highly Scalable Angular Folder Structure
-The project is inspired by an article I wrote on Medium called [How to define a highly scalable folder structure for your Angular project](https://itnext.io/choosing-a-highly-scalable-folder-structure-in-angular-d987de65ec7). The project is based on best practices from the community, other github Angular projects and my own experiences from working on several Angular projects. 
-
-![login screen screenshot](https://i.imgur.com/8Jny35g.png)
+# VIVOS Aire
 
 ## Prerequisites
 Before serving the project, you need to have Node version 8.9 and npm 5.5.1 or higher on your system. You can download the latest version of Node for your operating system on [Node's official site](https://nodejs.org/en/).
@@ -31,15 +28,9 @@ You can install the projects dependencies by running
 ````
 $ npm install
 ````
-## Development server
-Run `npm run start` for a dev server. The project will serve with the proxy a proxy flag by default. The proxy will highjack certain URLs, and send them to a specified backend server. You can avoid starting the project with proxy support by running `ng serve` instead.
-
 ## Scripts
-npm start -> Run dev. server on http://localhost:4200/
-npm run local -> Run application with mock data.
-npm run dev -> Run application with real time data.
-npm run build -> Lint code and build app for production in dist folder
-npm run lint -> Lint code
+Run `npm run local` for a mock data.
+Run `npm run dev` for a real data.
 
 ## License
 The MIT License (MIT)
