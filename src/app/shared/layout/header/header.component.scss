@@ -44,11 +44,13 @@
     width: calc(100% - 80px);
     margin: 10px auto;
     height: 65px;
-    background: $narvik;
-    align-items: center;
-    padding: 20px;
-    box-sizing: border-box;
-    box-shadow: 0px 1px 10px #e1edeb;
-    border-radius: $card-border-radius;
+  }
+
+  contact {
+    flex: 8;
+  }
+  diagnostics-overview {
+    flex: 4;
+    margin-left: 10px;
   }
 }
